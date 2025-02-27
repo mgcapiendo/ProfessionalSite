@@ -110,13 +110,15 @@ const contact = () => {
   
     <div className= "relative mx-auto p-10">
       {/*navbar at the top of the screen */}
-      <header className='flex justify-between items-center mb-8'> {/*flex allows for my dynamic positioning, justify between pushes h1 to the left and nav to the right, items-center is for vertical centering, mb-8 is for adding space at the bottom of the container*/}
+      <header className='flex justify-between items-center mb-5'> {/*flex allows for my dynamic positioning, justify between pushes h1 to the left and nav to the right, items-center is for vertical centering, mb-8 is for adding space at the bottom of the container*/}
           
+
+        
           <Link href="/" className='text-3xl font-bold  text-gray-900'> {/*text-3xl sets it to 30px and goes from xs,sm,base,lg,xl,2xl-9xl, font-bold makes it bold and can be replaced with sans, serif, mono, etc, text-gray-900 is default text color and intensity and can be adjusted to anything*/}
             Manuel Capiendo
           </Link>
-            
-            <nav className='space-x-4'> {/*space-x-4 is for horizontally spacing the children of this tag */} 
+                  
+            <nav className='space-x-4 shadow-md p-3 rounded-xl bg-gray-100'> {/*space-x-4 is for horizontally spacing the children of this tag */} 
               {/*good practice to use Link for internal routing, and anchor for external sites*/}
               <Link 
               href="/"
@@ -148,16 +150,31 @@ const contact = () => {
               className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
               >Contact</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
             </nav>
-
         </header>
 
-        <section className="absolute top-[300px] right-[460px]">
+
+        <section className="absolute top-[300px] right-[460px] text-center">
           <div className="grid grid-cols-8 lg:grid-cols-12 w-full">
-                <div className="lg:col-span-7 custom-bg lg:px-16 sm:py-20 rounded-2xl flex flex-col justify-center h-auto lg:h-80 bg-black/20 backdrop-blur-sm border border-white/10">
+                <div className="lg:col-span-7 custom-bg lg:px-16 sm:py-20 rounded-2xl flex flex-col justify-center h-auto bg-gray-100 rounded-xl shadow-lg">
                     <h2 className="text-xl sm:text-3xl font-semibold">Let's Stay in Touch</h2>
                     <div>
-                        <p>Here's how you can connect with me
+                        <p className='italic mb-5'>Here's how you can connect with me
                         </p>
+                        <a 
+                        href="https://www.linkedin.com/in/capiendo/"
+                        className='bg-blue-100 text-blue-500 px-3 py-1 rounded-full inline-block mr-2 mb-2 text-sm  hover:bg-transparent transition-colors duration-300'
+                        >Linkedin</a>
+
+                        <a 
+                        href="https://github.com/mgcapiendo"
+                        className='ml-1 bg-blue-100 text-blue-500 px-3 py-1 rounded-full inline-block mr-2 mb-2 text-sm  hover:bg-transparent transition-colors duration-300'
+                        >Github</a> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+                    </div>
+
+                    <div>
+                      <p className='mt-2 bg-blue-100 text-blue-500 px-3 py-1 rounded-full inline-block mr-2 mb-2 text-sm  hover:bg-transparent transition-colors duration-300'>
+                        manuelgcapiendo@gmail.com
+                      </p>
                     </div>
                 </div>
             </div>

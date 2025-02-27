@@ -265,7 +265,7 @@ export default function Home() {
               
               
               {/*skills section*/}
-              <section className='mb-20'>
+              <section className='mb-10'>
               <motion.div
                 initial={{ opacity: 0, x: -800 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -274,7 +274,7 @@ export default function Home() {
                   stiffness: 50,
                   damping: 15,
                   delay: 2.1 }}
-                className="mt-11 bg-gray-100 border border-gray-200 rounded-xl p-8 text-gray-800 shadow-lg"
+                className="mt-11 bg-gray-100 rounded-xl border border-gray-200 p-8 text-gray-800 shadow-lg"
               >
 
                   <div className="grid grid-cols-2 gap-4">
@@ -283,7 +283,7 @@ export default function Home() {
                       <ul className='space-y-2'> {/*space-y-2 adds spacing for the y-axis between the children of this tag with a space of 8px (1-20)*/}
                         {/*First we create an array of everything we want to include in our skills, .map() is a method to transform each item in the array and in this case according to a <li> tag, (skill,index) is a callback function that .map() calls for each item in our array and it takes skill (which is the current element) then index (which is what item it is currently on) and the arrow is just a quicker way to write a function and the function in this case returns the jsx which is the className we want to render for each skill*/}
                         {/*map() is a dynamic way of getting everything in the list rendered a specific way then doing it one by one */}
-                        {['Python', 'C/C++', 'JavaScript', 'React',].map((skill, index) => ( 
+                        {['Python', 'C/C++', 'JavaScript', 'SQL', 'HTML', 'CSS'].map((skill, index) => ( 
                           <li
                           key={index} 
                           className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 mb-2 text-sm'
@@ -300,7 +300,7 @@ export default function Home() {
                         <ul className='space-y-2'> {/*space-y-2 adds spacing for the y-axis between the children of this tag with a space of 8px (1-20)*/}
                         {/*First we create an array of everything we want to include in our skills, .map() is a method to transform each item in the array and in this case according to a <li> tag, (skill,index) is a callback function that .map() calls for each item in our array and it takes skill (which is the current element) then index (which is what item it is currently on) and the arrow is just a quicker way to write a function and the function in this case returns the jsx which is the className we want to render for each skill*/}
                         {/*map() is a dynamic way of getting everything in the list rendered a specific way then doing it one by one */}
-                        {['React', 'React Native', 'Next.js', 'Tailwind'].map((tech, index) => ( 
+                        {['React/Native', 'Angular', 'Node.js', 'Next.js', 'Git', 'CI/CD'].map((tech, index) => ( 
                           <li
                           key={index} 
                           className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 mb-2 text-sm'
