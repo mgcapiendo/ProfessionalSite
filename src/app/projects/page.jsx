@@ -61,30 +61,24 @@ const projects = () => {
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-semibold mb-4">Piezoelectric Ceramic Analyzer</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Initiated development of a flexible testing system for sonobuoy piezoelectric ceramics, combining hardware integration and custom 
+                       software to reduce testing time from 160 to 40 seconds, improving efficiency by 75%.</p>
+                       <p className="text-black-300">• Initiated development of a flexible testing system for sonobuoy piezoelectric ceramics, combining hardware integration and custom 
+                       software to reduce testing time from 160 to 40 seconds, improving efficiency by 75%.</p>
                    </div>
                </div>
 
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-semibold mb-4">Professional Site</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Live portfolio website showcasing projects, professional profiles, and resume with a responsive design and contact functionality. </p>
                    </div>
                </div>
 
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-semibold mb-4">Leetcode Habit Tracker</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Client-side mobile app that allows users to input, track, and update leetcode habits and goals through a minimal UI with async. </p>
                    </div>
                </div>
            </div>
@@ -94,30 +88,24 @@ const projects = () => {
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-semibold mb-4">Swarm Intelligence For Waste Management</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals. </p>
                    </div>
                </div>
 
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-semibold mb-4">Mycobiome Simulator Researcher Tool Set</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Led a team to develop a predictive tool for researchers to measure mycobimes with live data visualization across 10+ test cases. </p>
                    </div>
                </div>
 
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-semibold mb-4">Upcoming Projects</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Personal Schedule Optimizer</p>
+                       <p className="text-black-300">• Linkedin Branched</p>
+                       <p className="text-black-300">• Keyboard Activity Daily Wordle</p>
+                       <p className="text-black-300">• Fitness AI For Meal and Exercise Coaching</p>
                    </div>
                </div>
            </div>

@@ -58,76 +58,68 @@ const experience = () => {
 
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full">
                <div className="lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Experience 1</h2>
+                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">NextEra Energy: IT Nuclear Solutions Analyst Intern | Summer 2025</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Gaining hands-on experience developing AI-powered digital twin models in nuclear operations, developing expertise in both AI 
+                       implementation and industrial system optimization. </p>
+                       <p className="text-black-300">• Building cross-functional collaboration skills by working directly with nuclear engineers and data scientists, while learning to 
+                       implement AI algorithms in safety-critical environments. </p>
                    </div>
                </div>
 
                <div className="lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Experience 2</h2>
+                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Sparton Corporation: Acoustic Engineering Intern | Summer 2024</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Initiated development of a flexible testing system for sonobuoy piezoelectric ceramics, combining hardware integration and custom 
+                       software to reduce testing time from 160 to 40 seconds, improving efficiency by 75%. </p>
+                       <p className="text-black-300">• Implemented database integration that automated data collection for thousands of sonobuoy component tests, cutting data 
+                       retrieval time in half while ensuring accuracy across all testing categories. </p>
                    </div>
                </div>
            </div>
 
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full">
                <div className="lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Experience 3</h2>
+                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Cognitive Hackathon: 2nd Place Solo Developer | August 2024</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals. </p>
                    </div>
                </div>
 
                <div className="lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Experience 4</h2>
+                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Biotech Hackathon: Team Lead | January 2025</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals. </p>
                    </div>
                </div>
            </div>
 
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full">
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Org 1</h2>
+                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Naval Reserve Officier Training Corps: Midshipman | Summer 2021 - May 2023</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Cultivated advanced leadership skills through comprehensive military training, successfully completing rigorous physical and 
+                       academic performance assessments. </p>
+                       <p className="text-black-300">• Demonstrated strategic team leadership by coordinating group training exercises and mentoring 4 junior midshipmen, improving 
+                       team performance and individual professional development. </p>
                    </div>
                </div>
 
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Org 2</h2>
+                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Asian American Association: Ambassador | Spring 2022 - Spring 2023</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Developed event coordination and cross-cultural communication skills by supporting 11 diverse cultural events, enhancing 
+                       interpersonal and organizational abilities. </p>
+                       <p className="text-black-300">• Actively participated in and promoted cultural events, while serving as a key coordinator for operations to ensure successful 
+                       execution and increased member engagement. </p>
                    </div>
                </div>
 
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">Org 3</h2>
+                   <h2 className="text-xl sm:text-2xl font-semibold mb-4">South Florida Tech Hug: Flamingo Coder | February 2025 - Current</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• detail 1</p>
-                       <p className="text-black-300">• detail 2</p>
-                       <p className="text-black-300">• detail 3</p>
-                       <p className="text-black-300">• detail 4</p>
+                       <p className="text-black-300">• Assisting in monthly in-person coding classes for K-12 students, fostering an engaging learning environment while introducing 
+                       fundamental programming concepts through platforms like Code.org and freeCodeCamp. </p>
                    </div>
                </div>
            </div>
