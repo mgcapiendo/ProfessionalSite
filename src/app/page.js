@@ -265,7 +265,7 @@ export default function Home() {
               
               
               {/*skills section*/}
-              <section className='mb-10'>
+              <section className='mb-3'>
               <motion.div
                 initial={{ opacity: 0, x: -800 }}
                 animate={{ opacity: 1, x: 0 }}
