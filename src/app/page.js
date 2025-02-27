@@ -252,9 +252,9 @@ export default function Home() {
                 >
                 <div className="mt-8">
                   <p className="text-xl text-gray-700 text-lg leading-relaxed">
-                    I'm an aspiring software engineer with a passion for creating innovative solutions. 
-                    My background in interior design and architecture has given me a unique perspective 
-                    on problem-solving and user-centered design. I'm driven to develop tools that 
+                    I'm an aspiring software engineer with a passion for learning and creating innovative solutions. 
+                    My interests in interior design and architecture sparked my interest in this role and has given me a unique perspective 
+                    on problem-solving for user-centered design. I'm driven to develop tools that 
                     enhance productivity and create meaningful experiences for users.
                   </p>
                 </div>
