@@ -466,7 +466,7 @@ export default function Home() {
                     type: 'spring',
                     stiffness: 50,
                     damping: 15,
-                    delay: 2.1 }}
+                    delay: 1.5 }}
                 >
                 <h1 className="text-6xl font-bold text-gray-900 mb-4">Hey!</h1>
                   <div className="text-3xl text-blue-900 mb-6 font-semibold italic">
@@ -487,10 +487,10 @@ export default function Home() {
                     type: 'spring',
                     stiffness: 50,
                     damping: 15,
-                    delay: 2.1 }}
+                    delay: 1.5 }}
                 >
                 <div className="mt-8">
-                  <p className="text-xl text-gray-700 text-lg leading-relaxed">
+                  <p className="text-xl text-gray-700 text-lg font-semibold leading-relaxed">
                     I'm an aspiring software engineer with a passion for learning and creating innovative solutions. 
                     My interests in interior design and architecture is what sparked my interest in this role and has given me a unique perspective 
                     on problem-solving for user-centered design. I'm motivated to develop and collaborate on projects that 
@@ -512,7 +512,7 @@ export default function Home() {
                   type: 'spring',
                   stiffness: 50,
                   damping: 15,
-                  delay: 2.1 }}
+                  delay: 1.5 }}
                 className="mt-11 bg-gray-100 rounded-xl border border-gray-200 p-8 text-gray-800 shadow-lg"
               >
 
