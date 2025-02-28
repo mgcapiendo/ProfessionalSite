@@ -169,7 +169,7 @@ export default function Home() {
                     damping: 15,
                     }}
                 >
-          <Link href="/" className='text-3xl font-bold  text-gray-900'> {/*text-3xl sets it to 30px and goes from xs,sm,base,lg,xl,2xl-9xl, font-bold makes it bold and can be replaced with sans, serif, mono, etc, text-gray-900 is default text color and intensity and can be adjusted to anything*/}
+          <Link href="/" className='text-3xl font-bold text-gray-900'> {/*text-3xl sets it to 30px and goes from xs,sm,base,lg,xl,2xl-9xl, font-bold makes it bold and can be replaced with sans, serif, mono, etc, text-gray-900 is default text color and intensity and can be adjusted to anything*/}
             Manuel Capiendo
           </Link>
           </motion.div>
@@ -265,7 +265,7 @@ export default function Home() {
               
               
               {/*skills section*/}
-              <section className='mb-3'>
+              <section className='mb-6'>
               <motion.div
                 initial={{ opacity: 0, x: -800 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -316,7 +316,7 @@ export default function Home() {
             </div>
           </main>
 
-          <footer className='text-center text-sm'>
+          <footer className='text-center text-sm mt-12'>
             <p>© 2025 Manuel Capiendo. All rights reserved.</p>
           </footer>
 
