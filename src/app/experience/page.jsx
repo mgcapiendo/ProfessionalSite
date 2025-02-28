@@ -116,7 +116,7 @@ const experience = () => {
                </div>
 
                <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                   <h2 className="text-xl sm:text-2xl font-bold mb-4">South Florida Tech Hug: Flamingo Coder | February 2025 - Current</h2>
+                   <h2 className="text-xl sm:text-2xl font-bold mb-4">South Florida Tech Hub: Flamingo Coder | February 2025 - Current</h2>
                    <div className="space-y-4">
                        <p className="text-black-300"> Assisting in monthly in-person coding classes for K-12 students, fostering an engaging learning environment while introducing 
                        fundamental programming concepts through platforms like Code.org and freeCodeCamp. </p>
