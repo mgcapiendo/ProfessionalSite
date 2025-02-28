@@ -295,8 +295,7 @@ export default function Home() {
                     </div>
 
                     <div>
-                      <h3 className="font-semibold text-gray-800">Technologies/</h3>
-                      <h3 className="font-semibold mb-2 text-gray-800">Frameworks</h3>
+                      <h3 className="font-semibold text-gray-800">Technologies/Frameworks</h3>
                         <ul className='space-y-2'> {/*space-y-2 adds spacing for the y-axis between the children of this tag with a space of 8px (1-20)*/}
                         {/*First we create an array of everything we want to include in our skills, .map() is a method to transform each item in the array and in this case according to a <li> tag, (skill,index) is a callback function that .map() calls for each item in our array and it takes skill (which is the current element) then index (which is what item it is currently on) and the arrow is just a quicker way to write a function and the function in this case returns the jsx which is the className we want to render for each skill*/}
                         {/*map() is a dynamic way of getting everything in the list rendered a specific way then doing it one by one */}
