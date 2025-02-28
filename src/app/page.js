@@ -117,7 +117,9 @@ export default function Home() {
           stiffness: 30,
           damping: 10,
           duration: 80,
-          delay: 6
+          delay: 6,
+          repeat: Infinity,
+          repeatType: "loop"
         }}
         className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
       >
@@ -129,27 +131,258 @@ export default function Home() {
 
       </motion.div>
 
+      {/*Cloud phase 1 */}
+        {/*clouds */}
+        <motion.div
+          initial={{ opacity: 1, x: -300, y: -300}}
+          animate={{ opacity: 1,x: 2200, y: -300}}
+          transition={{
+            type: 'tween',
+            stiffness: 30,
+            damping: 10,
+            duration: 80,
+            delay: 7,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='0 0 40 100' className='w-full h-full'>
+            <circle cx="10" cy="10" r="10" fill="white"/>
+            <circle cx="20" cy="12" r="10" fill="white"/>
+            <circle cx="30" cy="10" r="10" fill="white"/>
+          </svg>
 
-      {/*clouds */}
-      <motion.div
-        initial={{ opacity: 1, x: -300, y: -300}}
-        animate={{ opacity: 1,x: 2200, y: -300}}
-        transition={{
-          type: 'tween',
-          stiffness: 30,
-          damping: 10,
-          duration: 80,
-          delay: 7
-        }}
-        className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
-      >
-        <svg viewBox='0 0 40 100' className='w-full h-full'>
-          <circle cx="10" cy="10" r="10" fill="white"/>
-          <circle cx="20" cy="12" r="10" fill="white"/>
-          <circle cx="30" cy="10" r="10" fill="white"/>
-        </svg>
+        </motion.div>
 
-      </motion.div>
+      {/*Cloud phase 2 */}
+        {/*clouds */}
+        <motion.div
+          initial={{ opacity: 1, x: -300, y: -310}}
+          animate={{ opacity: 1,x: 2200, y: -310}}
+          transition={{
+            type: 'tween',
+            stiffness: 30,
+            damping: 10,
+            duration: 80,
+            delay: 29,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='0 0 40 100' className='w-full h-full'>
+            <circle cx="10" cy="10" r="10" fill="white"/>
+            <circle cx="20" cy="12" r="10" fill="white"/>
+            <circle cx="30" cy="10" r="10" fill="white"/>
+          </svg>
+        </motion.div>
+        {/*clouds */}
+        <motion.div
+          initial={{ opacity: 1, x: -300, y: -130}}
+          animate={{ opacity: 1,x: 2200, y: -130}}
+          transition={{
+            type: 'tween',
+            stiffness: 30,
+            damping: 10,
+            duration: 80,
+            delay: 32,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='0 0 40 100' className='w-full h-full'>
+            <circle cx="10" cy="10" r="10" fill="white"/>
+            <circle cx="20" cy="12" r="10" fill="white"/>
+            <circle cx="30" cy="10" r="10" fill="white"/>
+          </svg>
+        </motion.div>
+
+        {/*Cloud phase 3*/}
+        {/*clouds */}
+        <motion.div
+          initial={{ opacity: 1, x: -300, y: -280}}
+          animate={{ opacity: 1,x: 2200, y: -280}}
+          transition={{
+            type: 'tween',
+            stiffness: 30,
+            damping: 10,
+            duration: 80,
+            delay: 50,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='0 0 40 100' className='w-full h-full'>
+            <circle cx="10" cy="10" r="10" fill="white"/>
+            <circle cx="20" cy="12" r="10" fill="white"/>
+            <circle cx="30" cy="10" r="10" fill="white"/>
+          </svg>
+        </motion.div>
+        {/*clouds */}
+        <motion.div
+          initial={{ opacity: 1, x: -300, y: -110}}
+          animate={{ opacity: 1,x: 2200, y: -110}}
+          transition={{
+            type: 'tween',
+            stiffness: 30,
+            damping: 10,
+            duration: 80,
+            delay: 53,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='0 0 40 100' className='w-full h-full'>
+            <circle cx="10" cy="10" r="10" fill="white"/>
+            <circle cx="20" cy="12" r="10" fill="white"/>
+            <circle cx="30" cy="10" r="10" fill="white"/>
+          </svg>
+        </motion.div>
+
+
+        {/*lets see if a bird is possible*/}
+        <motion.div
+          initial={{ opacity: 1, x: -250, y: -180}}
+          animate={{ opacity: 1,x: 2200, y: -180}}
+          transition={{
+            type: 'intertia',
+            stiffness: 90,
+            damping: 30,
+            duration: 40,
+            delay: 10,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='1 20 600 300' className='w-full h-full'>
+          <line x1="30" y1="20" x2="50" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="30" y1="20" x2="10" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="70" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="30" y2="50" stroke="black" strokeWidth="3" />
+          </svg>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 1, x: -270, y: -120}}
+          animate={{ opacity: 1,x: 2200, y: -120}}
+          transition={{
+            type: 'intertia',
+            stiffness: 90,
+            damping: 30,
+            duration: 40,
+            delay: 10,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='1 20 600 300' className='w-full h-full'>
+          <line x1="30" y1="20" x2="50" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="30" y1="20" x2="10" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="70" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="30" y2="50" stroke="black" strokeWidth="3" />
+          </svg>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 1, x: -250, y: -140}}
+          animate={{ opacity: 1,x: 2200, y: -140}}
+          transition={{
+            type: 'intertia',
+            stiffness: 90,
+            damping: 30,
+            duration: 40,
+            delay: 10,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='1 20 600 300' className='w-full h-full'>
+          <line x1="30" y1="20" x2="50" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="30" y1="20" x2="10" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="70" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="30" y2="50" stroke="black" strokeWidth="3" />
+          </svg>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 1, x: -220, y: -160}}
+          animate={{ opacity: 1,x: 2200, y: -160}}
+          transition={{
+            type: 'intertia',
+            stiffness: 90,
+            damping: 30,
+            duration: 40,
+            delay: 10,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='1 20 600 300' className='w-full h-full'>
+          <line x1="30" y1="20" x2="50" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="30" y1="20" x2="10" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="70" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="30" y2="50" stroke="black" strokeWidth="3" />
+          </svg>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 1, x: -280, y: -200}}
+          animate={{ opacity: 1,x: 2200, y: -200}}
+          transition={{
+            type: 'intertia',
+            stiffness: 90,
+            damping: 30,
+            duration: 40,
+            delay: 10,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='1 20 600 300' className='w-full h-full'>
+          <line x1="30" y1="20" x2="50" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="30" y1="20" x2="10" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="70" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="30" y2="50" stroke="black" strokeWidth="3" />
+          </svg>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 1, x: -290, y: -100}}
+          animate={{ opacity: 1,x: 2200, y: -100}}
+          transition={{
+            type: 'intertia',
+            stiffness: 90,
+            damping: 30,
+            duration: 40,
+            delay: 10,
+            repeat: Infinity,
+            repeatType: "loop"
+          }}
+          className="absolute transform -translate-x-1/3 w-100 h-90 top-1/3"
+        >
+          <svg viewBox='1 20 600 300' className='w-full h-full'>
+          <line x1="30" y1="20" x2="50" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="30" y1="20" x2="10" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="70" y2="50" stroke="black" strokeWidth="3" />
+          <line x1="50" y1="20" x2="30" y2="50" stroke="black" strokeWidth="3" />
+          </svg>
+        </motion.div>
+
+
+
+
+
+
+
 
 
 
@@ -158,8 +391,6 @@ export default function Home() {
 
         {/*navbar at the top of the screen */}
         <header className='flex justify-between items-center mb-5'> {/*flex allows for my dynamic positioning, justify between pushes h1 to the left and nav to the right, items-center is for vertical centering, mb-8 is for adding space at the bottom of the container*/}
-          
-
         <motion.div
                   initial={{ opacity: 0, x: -800 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -167,6 +398,7 @@ export default function Home() {
                     type: 'spring',
                     stiffness: 50,
                     damping: 15,
+                    delay: 2.6
                     }}
                 >
           <Link href="/" className='text-3xl font-bold text-gray-900'> {/*text-3xl sets it to 30px and goes from xs,sm,base,lg,xl,2xl-9xl, font-bold makes it bold and can be replaced with sans, serif, mono, etc, text-gray-900 is default text color and intensity and can be adjusted to anything*/}
@@ -175,15 +407,14 @@ export default function Home() {
           </motion.div>
             
           <motion.div
-                  initial={{ opacity: 0, x: 800 }}
+                  initial={{ opacity: 0, x: -1000 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ 
                     type: 'spring',
                     stiffness: 50,
-                    damping: 22,
-                    delay: 1.2 }}
+                    damping: 15,
+                    delay: 2.6 }}
                 >
-                  
             <nav className='space-x-4 shadow-md p-3 rounded-xl bg-gray-100'> {/*space-x-4 is for horizontally spacing the children of this tag */} 
               {/*good practice to use Link for internal routing, and anchor for external sites*/}
               <Link 
@@ -233,8 +464,8 @@ export default function Home() {
                   transition={{ 
                     type: 'spring',
                     stiffness: 50,
-                    damping: 20,
-                    delay: 2.7 }}
+                    damping: 15,
+                    delay: 2.1 }}
                 >
                 <h1 className="text-6xl font-bold text-gray-900 mb-4">Hey!</h1>
                   <p className="text-3xl text-gray-700 mb-6">I'm Manuel.</p>
@@ -247,8 +478,8 @@ export default function Home() {
                   transition={{ 
                     type: 'spring',
                     stiffness: 50,
-                    damping: 20,
-                    delay: 2.7 }}
+                    damping: 15,
+                    delay: 2.1 }}
                 >
                 <div className="mt-8">
                   <p className="text-xl text-gray-700 text-lg leading-relaxed">
