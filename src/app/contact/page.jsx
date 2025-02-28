@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const contact = () => {
   return (
 
-    <div className="relative min-h-screen overflow-hidden bg-sky-100"> 
+    <div className="relative min-h-screen overflow-hidden bg-sky-100 font-sans"> 
           
           {/* Animated Hills */}
           <motion.div
@@ -156,9 +156,9 @@ const contact = () => {
         <section className="absolute top-[300px] right-[460px] text-center">
           <div className="grid grid-cols-8 lg:grid-cols-12 w-full">
                 <div className="lg:col-span-7 custom-bg lg:px-16 sm:py-20 rounded-2xl flex flex-col justify-center h-auto bg-gray-100 rounded-xl shadow-lg">
-                    <h2 className="text-xl sm:text-3xl font-semibold">Let's Stay in Touch</h2>
+                    <h2 className="text-xl sm:text-4xl font-bold">Let's Stay in Touch</h2>
                     <div>
-                        <p className='italic mb-5'>Here's how you can connect with me
+                        <p className='italic mb-5 mt-1 text-blue-900 font-semibold text-md'>Here's how you can connect with me
                         </p>
                         <a 
                         href="https://www.linkedin.com/in/capiendo/"

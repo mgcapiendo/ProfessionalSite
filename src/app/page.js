@@ -154,7 +154,7 @@ export default function Home() {
 
 
       {/*this inner div stores everything that is NOT the background*/}
-      <div className="relative mx-auto p-10">
+      <div className="relative mx-auto p-10 font-sans">
 
         {/*navbar at the top of the screen */}
         <header className='flex justify-between items-center mb-5'> {/*flex allows for my dynamic positioning, justify between pushes h1 to the left and nav to the right, items-center is for vertical centering, mb-8 is for adding space at the bottom of the container*/}
@@ -223,7 +223,7 @@ export default function Home() {
 
 
           <main className="max-w-6xl mx-auto px-8 py-12">
-            <div className="w-full md:w-2/5"> {/*LETS GOO LEFT COLUMN */}
+            <div className="w-full md:w-1/2"> {/*LETS GOO LEFT COLUMN */}
 
               {/*intro section*/}
               <section> {/*previously i had the gray box but i dont want it anymore so no need for class name properties in this section */}
@@ -253,8 +253,8 @@ export default function Home() {
                 <div className="mt-8">
                   <p className="text-xl text-gray-700 text-lg leading-relaxed">
                     I'm an aspiring software engineer with a passion for learning and creating innovative solutions. 
-                    My interests in interior design and architecture sparked my interest in this role and has given me a unique perspective 
-                    on problem-solving for user-centered design. I'm driven to develop tools that 
+                    My interests in interior design and architecture is what sparked my interest in this role and has given me a unique perspective 
+                    on problem-solving for user-centered design. I'm motivated to develop and collaborate on projects that 
                     enhance productivity and create meaningful experiences for users.
                   </p>
                 </div>
