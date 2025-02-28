@@ -546,10 +546,6 @@ export default function Home() {
             </div>
           </main>
 
-          <footer className='text-center text-sm mt-12'>
-            <p>© 2025 Manuel Capiendo. All rights reserved.</p>
-          </footer>
-
       </div>
     </div>
 
