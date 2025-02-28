@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { Typewriter } from 'react-simple-typewriter'
 
 const experience = () => {
   return (
@@ -378,7 +379,7 @@ const experience = () => {
 
     <div className= "relative mx-auto p-10 font-sans leading-relaxed">
       {/*navbar at the top of the screen */}
-      <header className='flex justify-between items-center mb-5'> {/*flex allows for my dynamic positioning, justify between pushes h1 to the left and nav to the right, items-center is for vertical centering, mb-8 is for adding space at the bottom of the container*/}
+      <header className='flex justify-between items-center mb-5 '> {/*flex allows for my dynamic positioning, justify between pushes h1 to the left and nav to the right, items-center is for vertical centering, mb-8 is for adding space at the bottom of the container*/}
         <motion.div
                   initial={{ opacity: 0, x: -800 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -403,36 +404,36 @@ const experience = () => {
                     damping: 15,
                     delay: 0.3 }}
                 >
-            <nav className='space-x-4 shadow-md p-3 rounded-xl bg-gray-100'> {/*space-x-4 is for horizontally spacing the children of this tag */} 
+            <nav className='space-x-4 shadow-md p-3 rounded-xl bg-gray-100 font-semibold'> {/*space-x-4 is for horizontally spacing the children of this tag */} 
               {/*good practice to use Link for internal routing, and anchor for external sites*/}
               <Link 
               href="/"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Home</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Home</Link> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <Link 
               href="/projects"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Projects</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Projects</Link> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <Link 
               href="/experience"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Experience</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Experience</Link> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <a 
               href="https://github.com/mgcapiendo"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Github</a> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Github</a> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <a 
               href="https://www.linkedin.com/in/capiendo/"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Linkedin</a> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Linkedin</a> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <Link 
               href="/contact"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
               >Contact</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
             </nav>
           </motion.div>
@@ -454,19 +455,27 @@ const experience = () => {
         <section className="py-10 sm:py-20 w-full max-w-[1800px] mx-auto px-4 md:px-8 lg:px-16 xl:px-24 space-y-4 sm:space-y-6">
 
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full">
-               <div className="lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold">NextEra Energy: IT Nuclear Solutions Analyst Intern</h2>
                    <h3 className='text-lg mb-4 italic'>Summer 2025</h3>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Gaining hands-on experience developing AI-powered digital twin models in nuclear operations, developing expertise in both AI 
-                       implementation and industrial system optimization. </p>
+                  
+                    <div>
+                       <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <Typewriter 
+                            words={["Gaining hands-on experience developing AI-powered digital twin models in nuclear operations, developing expertise in both AI implementation and industrial system optimization."]} 
+                            typeSpeed={8}
+                            />
+                       </div>
+                    </div>
+
                    </div>
                    <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['AI', 'Drones', 'Agile', 'Leadership'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -475,20 +484,25 @@ const experience = () => {
                     </div>
                </div>
 
-               <div className="lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold">Sparton Corporation: Acoustic Engineering Intern</h2>
                    <h3 className='text-lg mb-4 italic'>Summer 2024</h3>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Initiated development of a flexible testing system for sonobuoy piezoelectric ceramics, combining hardware integration and custom 
-                       software to reduce testing time from 160 to 40 seconds, improving efficiency by 75%. Implemented database integration that automated data collection for 
-                       thousands of sonobuoy component tests, cutting data retrieval time in half while ensuring accuracy across all testing categories. 
-                       </p>
+                       
+                       <div>
+                       <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <Typewriter 
+                            words={["Developed a flexible testing system for sonobuoy piezoelectric ceramics, reducing testing time by 75% (160 to 40 seconds). Integrated a database to automate data collection for thousands of tests, halving retrieval time while ensuring accuracy."]} 
+                            typeSpeed={6}
+                            />
+                       </div>
+                    </div>
                        <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['C', 'LabWindows/CVI', 'SQL', 'Software Development', 'Department Collaboration'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -500,17 +514,26 @@ const experience = () => {
            </div>
 
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full">
-               <div className="lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold">Cognitive Hackathon: 2nd Place Solo Developer</h2>
                    <h3 className='text-lg mb-4 italic'>August 2024</h3>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals. </p>
+                       
+                    <div>
+                       <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <Typewriter 
+                            words={["Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals."]} 
+                            typeSpeed={8}
+                            />
+                       </div>
+                    </div>
+                       
                        <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['Python', 'Time Management', 'Presentation', 'Public Speaking', 'Research'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -520,17 +543,29 @@ const experience = () => {
                    </div>
                </div>
 
-               <div className="lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-6 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold">Biotech Hackathon: Team Lead</h2>
                    <h3 className='text-lg mb-4 italic'>January 2025</h3>
                    <div className="space-y-4">
-                       <p className="text-black-300">  Led a team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases.  </p>
+
+                       
+                       <div>
+                            <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                                <Typewriter 
+                                words={["Led a team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases. "]} 
+                                typeSpeed={8}
+                                />
+                            </div>
+                        </div>
+                       
+                       
+                       
                        <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['Python', 'Leadership', 'Adaptability', 'Public Speaking', 'Research'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -542,18 +577,27 @@ const experience = () => {
            </div>
 
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full">
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold ">Naval Reserve Officer Training Corps: Midshipman</h2>
                    <h3 className='text-lg mb-4 italic'>Summer 2021 - Spring 2023</h3>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Cultivated advanced leadership skills through comprehensive military training, successfully completing rigorous physical and 
-                       academic performance assessments. </p>
+                      
+                       <div>
+                            <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                                <Typewriter 
+                                words={["Cultivated advanced leadership skills through comprehensive military training, successfully completing rigorous physical and academic performance assessments. "]} 
+                                typeSpeed={8}
+                                />
+                            </div>
+                        </div>
+                       
+                       
                        <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['Military', 'Leadership', 'Public Speaking', 'Professionalism', 'Priority Mangement'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -563,18 +607,27 @@ const experience = () => {
                    </div>
                </div>
 
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold ">Asian American Association: Ambassador</h2>
                    <h3 className='text-lg mb-4 italic'>Spring 2022 - Spring 2023</h3>
-                   <div className="space-y-4">
-                       <p className="text-black-300"> Developed event coordination and cross-cultural communication skills by supporting 11 diverse cultural events, enhancing 
-                       interpersonal and organizational abilities. </p>
+                   <div className="space-y-4">                       
+                       
+                       <div>
+                            <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                                <Typewriter 
+                                words={["Developed event coordination and cross-cultural communication skills by supporting 11 diverse cultural events, enhancing interpersonal and organizational abilities. "]} 
+                                typeSpeed={8}
+                                />
+                            </div>
+                        </div>
+                       
+                       
                        <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['Cultural Education', 'Leadership', 'Public Speaking', 'Entertainment', 'Operations'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -584,18 +637,27 @@ const experience = () => {
                    </div>
                </div>
 
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 lg:px-16 py-8 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold">South Florida Tech Hub: Flamingo Coder</h2>
                    <h3 className='text-lg mb-4 italic'>Ongoing</h3>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Assisting in monthly in-person coding classes for K-12 students, fostering an engaging learning environment while introducing 
-                       fundamental programming concepts through platforms like Code.org and freeCodeCamp. </p>
-                       <div className='mt-3'>
+                       
+                       <div>
+                            <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                                <Typewriter 
+                                words={["Assisting in monthly in-person coding classes for K-12 students, fostering an engaging learning environment while introducing fundamental programming concepts through platforms like Code.org and freeCodeCamp. "]} 
+                                typeSpeed={8}
+                                />
+                            </div>
+                        </div>
+                       
+                 
+                    <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['Programming', 'Teaching', 'Public Speaking'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -607,7 +669,7 @@ const experience = () => {
            </div>
 
            <div className="grid grid-cols-1 lg:grid-cols-11 w-full text-sm">
-            <div className="lg:col-start-6 text-center rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg border border-white/10 hover:text-blue-500">
+            <div className="transistion-transform duration-300 hover:scale-105 lg:col-start-6 text-center rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg border border-white/10 hover:text-blue-500">
               <Link href="/ManuelCapiendo_Senior_BSComputerScienceAI_NuclearIT_Integration_Navy.pdf">View Full Resume</Link>
             </div>
           </div>

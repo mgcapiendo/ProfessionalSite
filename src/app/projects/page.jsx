@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { Typewriter } from 'react-simple-typewriter'
 
 const projects = () => {
   return (
@@ -379,7 +380,7 @@ const projects = () => {
 
     <div className= "relative mx-auto p-10">
       {/*navbar at the top of the screen */}
-      <header className='flex justify-between items-center mb-5'> {/*flex allows for my dynamic positioning, justify between pushes h1 to the left and nav to the right, items-center is for vertical centering, mb-8 is for adding space at the bottom of the container*/}
+      <header className='flex justify-between items-center mb-5 '> {/*flex allows for my dynamic positioning, justify between pushes h1 to the left and nav to the right, items-center is for vertical centering, mb-8 is for adding space at the bottom of the container*/}
         <motion.div
                   initial={{ opacity: 0, x: -800 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -404,36 +405,36 @@ const projects = () => {
                     damping: 15,
                     delay: 0.3 }}
                 >
-            <nav className='space-x-4 shadow-md p-3 rounded-xl bg-gray-100'> {/*space-x-4 is for horizontally spacing the children of this tag */} 
+            <nav className='space-x-4 shadow-md p-3 rounded-xl bg-gray-100 font-semibold'> {/*space-x-4 is for horizontally spacing the children of this tag */} 
               {/*good practice to use Link for internal routing, and anchor for external sites*/}
               <Link 
               href="/"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Home</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Home</Link> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <Link 
               href="/projects"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Projects</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Projects</Link> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <Link 
               href="/experience"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Experience</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Experience</Link> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <a 
               href="https://github.com/mgcapiendo"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Github</a> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Github</a> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <a 
               href="https://www.linkedin.com/in/capiendo/"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
-              >Linkedin</a> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
+              >Linkedin</a> {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
 
               <Link 
               href="/contact"
-              className='text-gray-600  hover:text-blue-500 transition-colors duration-300'
+              className='text-blue-900  hover:text-blue-500 transition-colors duration-300'
               >Contact</Link> {/*text-gray-600 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
             </nav>
           </motion.div>
@@ -452,19 +453,27 @@ const projects = () => {
             >
         <section className="py-10 sm:py-20 w-full max-w-[1800px] mx-auto px-4 md:px-8 lg:px-16 xl:px-24 space-y-4 leading-relaxed">
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full">
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold mb-4">Piezoelectric Ceramic Analyzer</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Initiated development of a flexible testing system for sonobuoy piezoelectric ceramics, combining hardware integration and custom 
-                       software to reduce testing time from 160 to 40 seconds, improving efficiency by 75%. Implemented database integration that automated data collection for 
-                       thousands of sonobuoy component tests, cutting data retrieval time in half while ensuring accuracy across all testing categories.</p>
+                   
+                    <div>
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <Typewriter 
+                            words={["Developed a flexible testing system for sonobuoy piezoelectric ceramics, reducing testing time by 75% (160 to 40 seconds). Integrated a database to automate data collection for thousands of tests, halving retrieval time while ensuring accuracy."]} 
+                            typeSpeed={7}
+                            />
+                        </div>
+                    </div>
+                   
                    </div>
                    <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['C', 'LabWindows/CVI', 'SQL', 'Instrument Integration'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -474,17 +483,27 @@ const projects = () => {
                 </div>
 
                
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold mb-4">Professional Website</h2>
-                   <div className="space-y-4">
-                       <p className="text-black-300"> Live portfolio website showcasing projects, professional profiles, and resume with a responsive design and contact functionality. </p>
+                   <div className="space-y-4">                  
+                   
+                    <div>
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <Typewriter 
+                            words={["Live portfolio website showcasing projects, professional profiles, and resume with a responsive design and contact functionality. "]} 
+                            typeSpeed={15}
+                            />
+                        </div>
+                    </div>
+                   
+                   
                    </div>
                    <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['JavaScript', 'React', 'Next.js', 'HTML', 'CSS', 'CI/CD'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -495,10 +514,19 @@ const projects = () => {
                     
 
                
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold mb-4">Leetcode Habit Tracker</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Client-side mobile app that allows users to input, track, and update leetcode habits and goals through a minimal UI with async. </p>
+                
+                    <div>
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <Typewriter 
+                            words={["Client-side mobile app that allows users to input, track, and update leetcode habits and goals through a minimal UI with async. "]} 
+                            typeSpeed={15}
+                            />
+                        </div>
+                    </div>
+                   
                    </div>
 
                    <div className='mt-3'>
@@ -506,7 +534,7 @@ const projects = () => {
                         {['JavaScript', 'React Native', 'HTML', 'CSS'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -519,17 +547,26 @@ const projects = () => {
 
 
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 w-full">
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 transistion-transform duration-300 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold mb-4">Swarm Intelligence For Waste Management</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals. </p>
+                   
+                       <div>
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <Typewriter 
+                            words={["Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals."]} 
+                            typeSpeed={15}
+                            />
+                        </div>
+                    </div>
+                   
                    </div>
                    <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['Python'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -538,17 +575,26 @@ const projects = () => {
                     </div>
                </div>
 
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold mb-4">Mycobiome Simulator Researcher Tool Set</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300"> Led a team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases. </p>
+                   
+                       <div>
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <Typewriter 
+                            words={["Led a team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases. "]} 
+                            typeSpeed={15}
+                            />
+                        </div>
+                    </div>
+                   
                    </div>
                    <div className='mt-3'>
                       <ul className='space-y-2'> 
                         {['Python'].map((skill, index) => ( 
                           <li
                           key={index} 
-                          className='bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
+                          className='transistion-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-3 py-1 rounded-full inline-block mr-2 text-sm'
                           >
                             {skill} 
                           </li>
@@ -557,13 +603,38 @@ const projects = () => {
                     </div>
                </div>
 
-               <div className="lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+               <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold mb-4">Upcoming Projects</h2>
                    <div className="space-y-4">
-                       <p className="text-black-300">• Personal Schedule Optimizer</p>
-                       <p className="text-black-300">• Linkedin Branched</p>
-                       <p className="text-black-300">• Keyboard Activity Daily Wordle</p>
-                       <p className="text-black-300">• Fitness AI For Meal and Exercise Coaching</p>
+                       <div className="text-lg text-blue-900 font-semibold italic">
+                            <Typewriter 
+                            words={["• Personal Schedule Optimizer"]} 
+                            typeSpeed={45}
+                            />
+                        </div>
+
+                        <div className="text-lg text-blue-900 font-semibold italic">
+                            <Typewriter 
+                            words={["• Linkedin Branched"]} 
+                            typeSpeed={45}
+                            />
+                        </div>
+
+                        <div className="text-lg text-blue-900 font-semibold italic">
+                            <Typewriter 
+                            words={["• Keyboard Activity Daily Wordle"]} 
+                            typeSpeed={45}
+                            />
+                        </div>
+
+                        <div className="text-lg text-blue-900 font-semibold italic">
+                            <Typewriter 
+                            words={["• Fitness AI For Meal and Exercise Coaching"]} 
+                            typeSpeed={45}
+                            />
+                        </div>
+
+                       
                    </div>
                </div>
            </div>
