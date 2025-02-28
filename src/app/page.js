@@ -469,7 +469,7 @@ export default function Home() {
                     delay: 1.5 }}
                 >
                 <h1 className="text-6xl font-bold text-gray-900 mb-4">Hey!</h1>
-                  <div className="text-3xl text-blue-900 mb-6 font-semibold italic">
+                  <div className="text-3xl text-blue-900 font-semibold italic" style={{ height: "30px"}}>
                     <Typewriter 
                     words={["I'm Manuel", "I'm a Learner", "I'm a Developer", "I'm a Doer", "I'm Manuel"]} 
                     typeSpeed={100}

@@ -461,7 +461,7 @@ const experience = () => {
                    <div className="space-y-4">
                   
                     <div>
-                       <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                       <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "70px"}}>
                             <Typewriter 
                             words={["Gaining hands-on experience developing AI-powered digital twin models in nuclear operations, developing expertise in both AI implementation and industrial system optimization."]} 
                             typeSpeed={8}
@@ -490,10 +490,10 @@ const experience = () => {
                    <div className="space-y-4">
                        
                        <div>
-                       <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                       <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "70px"}}>
                             <Typewriter 
                             words={["Developed a flexible testing system for sonobuoy piezoelectric ceramics, reducing testing time by 75% (160 to 40 seconds). Integrated a database to automate data collection for thousands of tests, halving retrieval time while ensuring accuracy."]} 
-                            typeSpeed={6}
+                            typeSpeed={8}
                             />
                        </div>
                     </div>
@@ -520,7 +520,7 @@ const experience = () => {
                    <div className="space-y-4">
                        
                     <div>
-                       <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                       <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "70px"}}>
                             <Typewriter 
                             words={["Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals."]} 
                             typeSpeed={8}
@@ -550,7 +550,7 @@ const experience = () => {
 
                        
                        <div>
-                            <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "70px"}}>
                                 <Typewriter 
                                 words={["Led a team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases. "]} 
                                 typeSpeed={8}
@@ -583,7 +583,7 @@ const experience = () => {
                    <div className="space-y-4">
                       
                        <div>
-                            <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "130px"}}>
                                 <Typewriter 
                                 words={["Cultivated advanced leadership skills through comprehensive military training, successfully completing rigorous physical and academic performance assessments. "]} 
                                 typeSpeed={8}
@@ -613,7 +613,7 @@ const experience = () => {
                    <div className="space-y-4">                       
                        
                        <div>
-                            <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "130px"}}>
                                 <Typewriter 
                                 words={["Developed event coordination and cross-cultural communication skills by supporting 11 diverse cultural events, enhancing interpersonal and organizational abilities. "]} 
                                 typeSpeed={8}
@@ -643,7 +643,7 @@ const experience = () => {
                    <div className="space-y-4">
                        
                        <div>
-                            <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                            <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "130px"}}>
                                 <Typewriter 
                                 words={["Assisting in monthly in-person coding classes for K-12 students, fostering an engaging learning environment while introducing fundamental programming concepts through platforms like Code.org and freeCodeCamp. "]} 
                                 typeSpeed={8}

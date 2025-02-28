@@ -459,7 +459,7 @@ const projects = () => {
                    <div className="space-y-4">
                    
                     <div>
-                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic " style={{ height: "120px"}}>
                             <Typewriter 
                             words={["Developed a flexible testing system for sonobuoy piezoelectric ceramics, reducing testing time by 75% (160 to 40 seconds). Integrated a database to automate data collection for thousands of tests, halving retrieval time while ensuring accuracy."]} 
                             typeSpeed={7}
@@ -488,7 +488,7 @@ const projects = () => {
                    <div className="space-y-4">                  
                    
                     <div>
-                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "120px"}}>
                             <Typewriter 
                             words={["Live portfolio website showcasing projects, professional profiles, and resume with a responsive design and contact functionality. "]} 
                             typeSpeed={15}
@@ -519,7 +519,7 @@ const projects = () => {
                    <div className="space-y-4">
                 
                     <div>
-                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "120px"}}>
                             <Typewriter 
                             words={["Client-side mobile app that allows users to input, track, and update leetcode habits and goals through a minimal UI with async. "]} 
                             typeSpeed={15}
@@ -552,7 +552,7 @@ const projects = () => {
                    <div className="space-y-4">
                    
                        <div>
-                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "120px"}}>
                             <Typewriter 
                             words={["Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals."]} 
                             typeSpeed={15}
@@ -580,7 +580,7 @@ const projects = () => {
                    <div className="space-y-4">
                    
                        <div>
-                        <div className="text-lg text-blue-900 mb-6 font-semibold italic">
+                        <div className="text-lg text-blue-900 mb-6 font-semibold italic" style={{ height: "120px"}}>
                             <Typewriter 
                             words={["Led a team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases. "]} 
                             typeSpeed={15}
@@ -606,28 +606,28 @@ const projects = () => {
                <div className="transistion-transform duration-300 hover:scale-105 lg:col-span-4 custom-bg px-4 sm:px-6 md:px-12 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                    <h2 className="text-xl sm:text-2xl font-bold mb-4">Upcoming Projects</h2>
                    <div className="space-y-4">
-                       <div className="text-lg text-blue-900 font-semibold italic">
+                       <div className="text-lg text-blue-900 font-semibold italic" style={{ height: "30px"}}>
                             <Typewriter 
                             words={["• Personal Schedule Optimizer"]} 
                             typeSpeed={45}
                             />
                         </div>
 
-                        <div className="text-lg text-blue-900 font-semibold italic">
+                        <div className="text-lg text-blue-900 font-semibold italic" style={{ height: "30px"}}>
                             <Typewriter 
                             words={["• Linkedin Branched"]} 
                             typeSpeed={45}
                             />
                         </div>
 
-                        <div className="text-lg text-blue-900 font-semibold italic">
+                        <div className="text-lg text-blue-900 font-semibold italic"style={{ height: "30px"}}>
                             <Typewriter 
                             words={["• Keyboard Activity Daily Wordle"]} 
                             typeSpeed={45}
                             />
                         </div>
 
-                        <div className="text-lg text-blue-900 font-semibold italic">
+                        <div className="text-lg text-blue-900 font-semibold italic" style={{ height: "30px"}}>
                             <Typewriter 
                             words={["• Fitness AI For Meal and Exercise Coaching"]} 
                             typeSpeed={45}
