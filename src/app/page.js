@@ -463,6 +463,10 @@ export default function Home() {
 
 
 
+
+
+
+
           <main className="max-w-6xl mx-auto px-4 sm:px-8 py-6 sm:py-12">
             <div className="w-full md:w-2/3 lg:w-1/2"> {/*LETS GOO LEFT COLUMN */}
 

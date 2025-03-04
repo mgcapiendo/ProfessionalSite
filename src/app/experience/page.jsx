@@ -519,7 +519,7 @@ const experience = () => {
                 
                 <div className="mt-auto pt-4">
                   <ul className='flex flex-wrap gap-2'> 
-                    {['C', 'LabWindows/CVI', 'SQL', 'Software Development', 'Department Collaboration'].map((skill, index) => ( 
+                    {['C', 'LabWindows/CVI', 'SQL', 'Software Development'].map((skill, index) => ( 
                       <li
                         key={index} 
                         className='transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm'
