@@ -678,7 +678,7 @@ const experience = () => {
             
             <div className="w-full mt-8 flex justify-center">
               <Link 
-                href="/ManuelCapiendo_Senior_BSComputerScienceAI_NuclearIT_Integration_Navy.pdf"
+                href="/ManuelCapiendo_CS_Senior_WebDev_Resume.pdf"
                 className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
               >
                 View Full Resume

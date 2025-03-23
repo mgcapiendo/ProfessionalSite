@@ -496,7 +496,7 @@ const contact = () => {
               <div>
                 <Link 
                   className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-500 px-4 py-2 rounded-full inline-block text-sm sm:text-base hover:bg-transparent border border-blue-100 transition-colors" 
-                  href="/ManuelCapiendo_Senior_BSComputerScienceAI_NuclearIT_Integration_Navy.pdf"
+                  href="/ManuelCapiendo_CS_Senior_WebDev_Resume.pdf"
                 >
                   View Full Resume
                 </Link>
