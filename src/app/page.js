@@ -491,9 +491,9 @@ export default function Home() {
                 <div className="mt-8">
                   <p className="text-base sm:text-lg md:text-xl text-gray-700 font-semibold leading-relaxed">
                     I'm an aspiring software engineer with a passion for learning and creating innovative solutions. 
-                    My interests in interior design and architecture is what sparked my interest in this role and has given me a unique perspective 
-                    on problem-solving for user-centered design. I'm motivated to develop and collaborate on projects that 
-                    enhance productivity and create meaningful experiences for users.
+                    My background in computer science, combined with my interest in interior design and architecture, gives me a
+                    unique perspective on problem-solving and user-centered design. I'm determined to develop and collaborate on projects that 
+                    help improve productivity and create meaningful experiences for users.
                   </p>
                 </div>
                 </motion.div>
