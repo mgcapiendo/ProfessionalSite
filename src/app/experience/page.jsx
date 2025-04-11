@@ -593,21 +593,6 @@ const experience = () => {
               >
                 Experience
               </Link>{" "}
-              {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
-              <a
-                href="https://github.com/mgcapiendo"
-                className="text-blue-900  hover:text-blue-500 transition-colors duration-300 mb-1 sm:mb-0"
-              >
-                Github
-              </a>{" "}
-              {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
-              <a
-                href="https://www.linkedin.com/in/capiendo/"
-                className="text-blue-900  hover:text-blue-500 transition-colors duration-300 mb-1 sm:mb-0"
-              >
-                Linkedin
-              </a>{" "}
-              {/*text-blue-900 is for setting the color and intensity, hover: declares when the mouse is over it, underlines it on hover and turns it blue, transistion-colors duration-300 makes it smoothly change the color over 300ms instead of instant*/}
               <Link
                 href="/contact"
                 className="text-blue-900  hover:text-blue-500 transition-colors duration-300 mb-1 sm:mb-0"
