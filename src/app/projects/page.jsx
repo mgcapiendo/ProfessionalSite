@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import thrillSeekerLogo from "../../../images/thrillseekerlogo.jpg";
 
 const projects = () => {
   return (
@@ -817,7 +818,7 @@ const projects = () => {
                   Thrill Seeker
                 </h2>
 
-                <div className="mb-10 min-h-[192px]">
+                <div className=" min-h-[150px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
                     <Typewriter
                       words={[
@@ -827,6 +828,17 @@ const projects = () => {
                     />
                   </div>
                 </div>
+
+                <a
+                  href="https://mgcapiendo.github.io/thrillseeker/"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/thrillseekerlogo.jpg"
+                    alt="Thrill Seeker Logo"
+                    className="cursor-pointer hover:opacity-80 transition-opacity"
+                  />
+                </a>
 
                 <div className="mt-auto pt-4">
                   <ul className="flex flex-wrap gap-2">
