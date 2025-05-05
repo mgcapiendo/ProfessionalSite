@@ -636,6 +636,7 @@ const contact = () => {
                 <a
                   href="https://www.linkedin.com/in/capiendo/"
                   className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-500 px-4 py-2 rounded-full text-sm sm:text-base hover:bg-transparent border border-blue-100 transition-colors"
+                  target="_blank"
                 >
                   LinkedIn
                 </a>
@@ -643,6 +644,7 @@ const contact = () => {
                 <a
                   href="https://github.com/mgcapiendo"
                   className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-500 px-4 py-2 rounded-full text-sm sm:text-base hover:bg-transparent border border-blue-100 transition-colors"
+                  target="_blank"
                 >
                   GitHub
                 </a>
@@ -658,6 +660,7 @@ const contact = () => {
                 <Link
                   className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-500 px-4 py-2 rounded-full inline-block text-sm sm:text-base hover:bg-transparent border border-blue-100 transition-colors"
                   href="/ManuelCapiendo_CS_Senior_WebDev_Resume.pdf"
+                  target="_blank"
                 >
                   View Full Resume
                 </Link>

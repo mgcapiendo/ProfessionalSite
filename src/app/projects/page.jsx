@@ -811,6 +811,36 @@ const projects = () => {
                   </ul>
                 </div>
               </div>
+
+              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                  Thrill Seeker
+                </h2>
+
+                <div className="mb-10 min-h-[192px]">
+                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
+                    <Typewriter
+                      words={[
+                        "Developed a GeoGuessr-inspired theme park guessing game utilizing JavaScript for game mechanics, HTML image maps for location selection, and implemented customizable difficulty settings with random image generation.",
+                      ]}
+                      typeSpeed={7}
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-auto pt-4">
+                  <ul className="flex flex-wrap gap-2">
+                    {["JavaScript", "HTML", "CSS"].map((skill, index) => (
+                      <li
+                        key={index}
+                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           </section>
         </motion.div>
