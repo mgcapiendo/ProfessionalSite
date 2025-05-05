@@ -616,30 +616,37 @@ const projects = () => {
         >
           <section className="py-10 sm:py-20 w-full max-w-[1800px] mx-auto px-4 md:px-8 lg:px-16 xl:px-24 space-y-4 leading-relaxed">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full">
+              {/*7 thrill seeker */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                 <h2 className="text-xl sm:text-2xl font-bold mb-4">
-                  Piezoelectric Ceramic Analyzer
+                  Thrill Seeker
                 </h2>
 
-                <div className="mb-10 min-h-[192px]">
+                <div className=" min-h-[150px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
                     <Typewriter
                       words={[
-                        "Developed a flexible testing system for sonobuoy piezoelectric ceramics, reducing testing time by 75% (160 to 40 seconds). Integrated a database to automate data collection for thousands of tests, halving retrieval time while ensuring accuracy.",
+                        "Developed a GeoGuessr-inspired theme park guessing game utilizing JavaScript for game mechanics, HTML image maps for location selection, and implemented customizable difficulty settings with random image generation.",
                       ]}
                       typeSpeed={7}
                     />
                   </div>
                 </div>
 
+                <a
+                  href="https://mgcapiendo.github.io/thrillseeker/"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/thrillseekerlogo.jpg"
+                    alt="Thrill Seeker Logo"
+                    className="cursor-pointer hover:opacity-80 transition-opacity"
+                  />
+                </a>
+
                 <div className="mt-auto pt-4">
                   <ul className="flex flex-wrap gap-2">
-                    {[
-                      "C",
-                      "LabWindows/CVI",
-                      "SQL",
-                      "Instrument Integration",
-                    ].map((skill, index) => (
+                    {["JavaScript", "HTML", "CSS"].map((skill, index) => (
                       <li
                         key={index}
                         className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
@@ -651,6 +658,104 @@ const projects = () => {
                 </div>
               </div>
 
+              {/*6 scheduler */}
+              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                  Schedule Optimizer
+                </h2>
+
+                <div className="mb-10 min-h-[192px]">
+                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
+                    <Typewriter
+                      words={[
+                        "Developed a CRUD task management application using Next.js and MongoDB, customized interface, popup task details, and persistent storage, providing seamless task organization while enhancing user productivity.",
+                      ]}
+                      typeSpeed={7}
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-auto pt-4">
+                  <ul className="flex flex-wrap gap-2">
+                    {["Java Script", "React", "Next.js", "MongoDB"].map(
+                      (skill, index) => (
+                        <li
+                          key={index}
+                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
+                        >
+                          {skill}
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+              </div>
+
+              {/*5 leetcode */}
+              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                  LeetCode Habit Tracker
+                </h2>
+
+                <div className="mb-10 min-h-[192px]">
+                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
+                    <Typewriter
+                      words={[
+                        "Client-side mobile app that allows users to input, track, and update leetcode habits and goals through a minimal UI with async.",
+                      ]}
+                      typeSpeed={7}
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-auto pt-4">
+                  <ul className="flex flex-wrap gap-2">
+                    {["JavaScript", "React Native", "HTML", "CSS"].map(
+                      (skill, index) => (
+                        <li
+                          key={index}
+                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
+                        >
+                          {skill}
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+              </div>
+
+              {/*4 mycobiome */}
+              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                  Mycobiome Simulator Researcher Tool Set
+                </h2>
+
+                <div className="mb-10 min-h-[192px]">
+                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
+                    <Typewriter
+                      words={[
+                        "Led an interdisciplinary team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases.",
+                      ]}
+                      typeSpeed={7}
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-auto pt-4">
+                  <ul className="flex flex-wrap gap-2">
+                    {["Python"].map((skill, index) => (
+                      <li
+                        key={index}
+                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/*3 portfolio */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                 <h2 className="text-xl sm:text-2xl font-bold mb-4">
                   Professional Website
@@ -688,38 +793,7 @@ const projects = () => {
                 </div>
               </div>
 
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
-                  LeetCode Habit Tracker
-                </h2>
-
-                <div className="mb-10 min-h-[192px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Client-side mobile app that allows users to input, track, and update leetcode habits and goals through a minimal UI with async.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["JavaScript", "React Native", "HTML", "CSS"].map(
-                      (skill, index) => (
-                        <li
-                          key={index}
-                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                        >
-                          {skill}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-
+              {/*2 swarm intel */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                 <h2 className="text-xl sm:text-2xl font-bold mb-4">
                   Swarm Intelligence For Waste Management
@@ -750,16 +824,17 @@ const projects = () => {
                 </div>
               </div>
 
+              {/*1 piezoelectric */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
                 <h2 className="text-xl sm:text-2xl font-bold mb-4">
-                  Mycobiome Simulator Researcher Tool Set
+                  Piezoelectric Ceramic Analyzer
                 </h2>
 
                 <div className="mb-10 min-h-[192px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
                     <Typewriter
                       words={[
-                        "Led an interdisciplinary team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases.",
+                        "Developed a flexible testing system for sonobuoy piezoelectric ceramics, reducing testing time by 75% (160 to 40 seconds). Integrated a database to automate data collection for thousands of tests, halving retrieval time while ensuring accuracy.",
                       ]}
                       typeSpeed={7}
                     />
@@ -768,80 +843,12 @@ const projects = () => {
 
                 <div className="mt-auto pt-4">
                   <ul className="flex flex-wrap gap-2">
-                    {["Python"].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
-                  Schedule Optimizer
-                </h2>
-
-                <div className="mb-10 min-h-[192px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed a CRUD task management application using Next.js and MongoDB, customized interface, popup task details, and persistent storage, providing seamless task organization while enhancing user productivity.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["Java Script", "React", "Next.js", "MongoDB"].map(
-                      (skill, index) => (
-                        <li
-                          key={index}
-                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                        >
-                          {skill}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
-                  Thrill Seeker
-                </h2>
-
-                <div className=" min-h-[150px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed a GeoGuessr-inspired theme park guessing game utilizing JavaScript for game mechanics, HTML image maps for location selection, and implemented customizable difficulty settings with random image generation.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <a
-                  href="https://mgcapiendo.github.io/thrillseeker/"
-                  target="_blank"
-                >
-                  <img
-                    src="/images/thrillseekerlogo.jpg"
-                    alt="Thrill Seeker Logo"
-                    className="cursor-pointer hover:opacity-80 transition-opacity"
-                  />
-                </a>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["JavaScript", "HTML", "CSS"].map((skill, index) => (
+                    {[
+                      "C",
+                      "LabWindows/CVI",
+                      "SQL",
+                      "Instrument Integration",
+                    ].map((skill, index) => (
                       <li
                         key={index}
                         className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
