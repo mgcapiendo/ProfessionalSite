@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import thrillSeekerLogo from "../../../images/thrillseekerlogo.jpg";
 
 const projects = () => {
   return (
