@@ -56,15 +56,16 @@ export default function Home() {
             >
               <div className="mt-8">
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 font-semibold leading-relaxed">
-                  I'm an aspiring software engineer and I want to build
-                  technology that creates wonder. My journey started in middle
-                  school with an engineering program and has continued through
-                  college studying computer science and artificial intelligence.
-                  My interests in process improvement and enterprise design have
-                  taught me to adapt, learn quickly, and collaborate with great
-                  people. I'm determined to contribute to projects with emerging
-                  technologies and open to exploring roles where I can make the
-                  most impact.
+                  I'm an aspiring software engineer who wants to build
+                  technology that inspires and creates wonder. My journey began
+                  in middle school with an engineering program and has continued
+                  through college, where I study computer science and artificial
+                  intelligence. Along the way, my interests in process
+                  improvement and enterprise design have taught me to adapt,
+                  learn quickly, and collaborate with great people. I'm
+                  determined to contribute to projects that push technology
+                  forward while exploring opportunities to learn, grow, and make
+                  the most impact.
                 </p>
               </div>
             </motion.div>

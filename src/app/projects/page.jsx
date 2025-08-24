@@ -23,15 +23,18 @@ const projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full">
               {/* Theme Park Ticketing System */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold">
                   Theme Park Ticketing System
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  August 2025 - August 2025
+                </h3>
 
                 <div className="min-h-[150px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
                     <Typewriter
                       words={[
-                        "Developing a full-stack ticketing platform featuring photo verification and end-to-end automated testing, ensuring robust frontend/backend integration and database reliability.",
+                        "Developed full-stack attraction ticketing platform featuring photo verification and end-to-end automated testing, ensuring robust frontend/backend integration and database reliability.",
                       ]}
                       typeSpeed={7}
                     />
@@ -56,15 +59,18 @@ const projects = () => {
 
               {/* Disney Emissions Dashboard */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold">
                   Disney Emissions Dashboard
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  June 2025 - July 2025
+                </h3>
 
                 <div className="min-h-[150px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
                     <Typewriter
                       words={[
-                        "Developed an interactive sustainability dashboard on The Walt Disney Company to visualize Scope 1–3carbon emissions and track progress toward 2030 net zero targets; integrated a petition registration feature.",
+                        "Developed interactive sustainability dashboard for The Walt Disney Company to visualize Scope 1-3 carbon emissions and track progress toward 2030 net zero targets; integrated petition registration feature.",
                       ]}
                       typeSpeed={7}
                     />
@@ -87,15 +93,18 @@ const projects = () => {
 
               {/* Voice-Controlled Robot Assistant */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold">
                   Voice-Controlled Robot Assistant
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  April 2025 - May 2025
+                </h3>
 
                 <div className="min-h-[150px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
                     <Typewriter
                       words={[
-                        "Engineered a voice-interactive robot utilizing Python for speech recognition, Arduino for servo motor control, and Google's Gemini API for natural language processing, for a responsive robot with physical interaction capabilities",
+                        "Engineered voice-interactive robot using Python for speech recognition, Arduino for servo motor control, and Google's Gemini API for natural language processing, creating a responsive robot with physical interaction capabilities.",
                       ]}
                       typeSpeed={7}
                     />
@@ -118,15 +127,16 @@ const projects = () => {
 
               {/* Thrill Seeker */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
-                  Thrill Seeker
-                </h2>
+                <h2 className="text-xl sm:text-2xl font-bold">Thrill Seeker</h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  April 2025 - May 2025
+                </h3>
 
                 <div className="min-h-[150px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
                     <Typewriter
                       words={[
-                        "Developed a GeoGuessr-inspired theme park guessing game utilizing JavaScript for game mechanics, HTML image maps for location selection, and implemented customizable difficulty settings with random image generation.",
+                        "Created GeoGuessr-inspired theme park location guessing game using JavaScript, featuring dynamic image maps, randomized clues, and adjustable difficulty to create engaging and replayable user experience across several locations.",
                       ]}
                       typeSpeed={7}
                     />
@@ -160,9 +170,12 @@ const projects = () => {
 
               {/* Schedule Optimizer */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold">
                   Schedule Optimizer
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  March 2025 - April 2025
+                </h3>
 
                 <div className="mb-10 min-h-[192px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
@@ -193,9 +206,12 @@ const projects = () => {
 
               {/* LeetCode Habit Tracker */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold">
                   LeetCode Habit Tracker
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  February 2025 - March 2025
+                </h3>
 
                 <div className="mb-10 min-h-[192px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
