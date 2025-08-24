@@ -79,7 +79,7 @@ const projects = () => {
 
                 <div className="mt-auto pt-4">
                   <ul className="flex flex-wrap gap-2">
-                    {["JavaScript", "HTML", "CSS"].map((skill, index) => (
+                    {["JavaScript"].map((skill, index) => (
                       <li
                         key={index}
                         className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
@@ -156,7 +156,7 @@ const projects = () => {
 
                 <div className="mt-auto pt-4">
                   <ul className="flex flex-wrap gap-2">
-                    {["JavaScript", "HTML", "CSS"].map((skill, index) => (
+                    {["JavaScript"].map((skill, index) => (
                       <li
                         key={index}
                         className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
@@ -226,7 +226,7 @@ const projects = () => {
 
                 <div className="mt-auto pt-4">
                   <ul className="flex flex-wrap gap-2">
-                    {["JavaScript", "React Native", "HTML", "CSS"].map(
+                    {["JavaScript", "React Native"].map(
                       (skill, index) => (
                         <li
                           key={index}
@@ -242,15 +242,18 @@ const projects = () => {
 
               {/* Mycobiome Simulator */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold">
                   Mycobiome Simulator Researcher Tool Set
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  January 2025 - January 2025
+                </h3>
 
                 <div className="mb-10 min-h-[192px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
                     <Typewriter
                       words={[
-                        "Led an interdisciplinary team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases.",
+                        "Led 4-person interdisciplinary team to develop proof-of-concept and prototype predictive tool for researchers to measure human mycobiomes with live data visualization across 10+ individual test cases.",
                       ]}
                       typeSpeed={7}
                     />
@@ -273,9 +276,12 @@ const projects = () => {
 
               {/* Professional Website */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
-                  Professional Website
+                <h2 className="text-xl sm:text-2xl font-bold">
+                  Professional Portfolio Website
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  February 2025 - February 2025
+                </h3>
 
                 <div className="mb-10 min-h-[192px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
@@ -293,10 +299,7 @@ const projects = () => {
                     {[
                       "JavaScript",
                       "React",
-                      "Next.js",
-                      "HTML",
-                      "CSS",
-                      "CI/CD",
+                      "Next.js"
                     ].map((skill, index) => (
                       <li
                         key={index}
@@ -311,9 +314,12 @@ const projects = () => {
 
               {/* Swarm Intelligence */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold">
                   Swarm Intelligence For Waste Management
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  August 2024 - August 2024
+                </h3>
 
                 <div className="mb-10 min-h-[192px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
@@ -342,9 +348,12 @@ const projects = () => {
 
               {/* Piezoelectric Ceramic Analyzer */}
               <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold">
                   Piezoelectric Ceramic Analyzer
                 </h2>
+                <h3 className="text-base sm:text-lg mb-4 italic">
+                  May 2024 - August 2024
+                </h3>
 
                 <div className="mb-10 min-h-[192px]">
                   <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
@@ -361,9 +370,9 @@ const projects = () => {
                   <ul className="flex flex-wrap gap-2">
                     {[
                       "C",
-                      "LabWindows/CVI",
                       "SQL",
-                      "Instrument Integration",
+                      "Microsoft SQL Server",
+                      "HIOKI Impedance Analyzer"
                     ].map((skill, index) => (
                       <li
                         key={index}
