@@ -1,13 +1,108 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
-const projects = () => {
+const Projects = () => {
+  const projects = [
+    {
+      title: "Theme Park Ticketing System",
+      date: "August 2025 - August 2025",
+      description: [
+        "Built a full-stack ticketing platform to simulate themepark purchasing pipeline and database processing and automated testing.",
+        "Ensured robust frontend/backend integration and database reliability."
+      ],
+      skills: ["React", "Flask", "PostgresSQL", "Selenium"]
+    },
+    {
+      title: "Disney Emissions Dashboard",
+      date: "June 2025 - July 2025",
+      description: [
+        "Developed interactive sustainability dashboard for Disney to visualize Scope 1-3 carbon emissions.",
+        "Integrated petition registration feature and tracked progress toward 2030 net zero targets."
+      ],
+      skills: ["JavaScript"]
+    },
+    {
+      title: "Voice-Controlled Robot Assistant",
+      date: "April 2025 - May 2025",
+      description: [
+        "Engineered voice-interactive robot using Python for speech recognition, Arduino for servo motor control.",
+        "Implemented Google's Gemini API for natural language processing to create responsive physical interaction."
+      ],
+      skills: ["Python", "Arduino"]
+    },
+    {
+      title: "Thrill Seeker",
+      date: "April 2025 - May 2025",
+      description: [
+        "Created GeoGuessr-inspired theme park location guessing game on Universal and Disney using JavaScript.",
+        "Features dynamic image maps, randomized clues, and adjustable difficulty to ensure replayability."
+      ],
+      skills: ["JavaScript"],
+      link: "https://mgcapiendo.github.io/thrillseeker/",
+      img: "/images/thrillseekerlogo.jpg"
+    },
+    {
+      title: "Schedule Optimizer",
+      date: "March 2025 - April 2025",
+      description: [
+        "Developed a CRUD task management app using Next.js and MongoDB.",
+        "Customized interface, popup task details, and persistent storage for personal organization."
+      ],
+      skills: ["JavaScript", "React", "Next.js", "MongoDB"]
+    },
+    {
+      title: "LeetCode Habit Tracker",
+      date: "February 2025 - March 2025",
+      description: [
+        "Mobile app created to input, track, and update leetcode habits.",
+        "Created to meet study goals, see progress, and built personal timeline"
+      ],
+      skills: ["JavaScript", "React Native"]
+    },
+    {
+      title: "Mycobiome Simulator Researcher Tool Set",
+      date: "January 2025 - January 2025",
+      description: [
+        "Led 4-person interdisciplinary team to develop proof-of-concept predictive tool.",
+        "Live data visualization across 10+ test cases for human mycobiomes."
+      ],
+      skills: ["Python"]
+    },
+    {
+      title: "Professional Portfolio Website",
+      date: "February 2025 - February 2025",
+      description: [
+        "Created fully responsive portfolio website with React to showcase projects and resume.",
+        "Ensured functionality over different devices and locations, hosted on vercel using Next.js and porkbun for domain"
+      ],
+      skills: ["JavaScript", "React", "Next.js"]
+    },
+    {
+      title: "Swarm Intelligence For Waste Management",
+      date: "August 2024 - August 2024",
+      description: [
+        "Developed a swarm intelligence solution using Ant Colony Optimization to reduce route inefficiencies and overhead by 10% for waste management trucks.",
+        "Achieved 2nd place as solo developer for waste-to-energy optimization applications."
+      ],
+      skills: ["Python"]
+    },
+    {
+      title: "Piezoelectric Ceramic Analyzer",
+      date: "May 2024 - August 2024",
+      description: [
+        "Developed flexible testing system for sonobuoy piezoelectric ceramics, reducing test time by 75%.",
+        "Integrated database for automated data collection and improved accuracy and retrieval by 50%."
+      ],
+      skills: ["C", "SQL", "Microsoft SQL Server", "HIOKI Impedance Analyzer"]
+    }
+  ];
+
   return (
     <div className="min-h-screen font-sans">
-      {/* Projects Content */}
       <main className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 800 }}
@@ -20,371 +115,92 @@ const projects = () => {
           }}
         >
           <section className="py-10 sm:py-20 w-full max-w-[1800px] mx-auto px-4 md:px-8 lg:px-16 xl:px-24 space-y-4 leading-relaxed">
+
+            {/* Page Title */}
+            <div className="text-center mb-8 sm:mb-12">
+              <h1 className="text-4xl sm:text-5xl font-bold text-black mb-6">
+                My Projects
+              </h1>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full">
-              {/* Theme Park Ticketing System */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  Theme Park Ticketing System
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  August 2025 - August 2025
-                </h3>
-
-                <div className="min-h-[150px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed full-stack attraction ticketing platform featuring photo verification and end-to-end automated testing, ensuring robust frontend/backend integration and database reliability.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["React", "Flask", "PostgresSQL", "Selenium"].map(
-                      (skill, index) => (
-                        <li
-                          key={index}
-                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                        >
-                          {skill}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Disney Emissions Dashboard */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  Disney Emissions Dashboard
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  June 2025 - July 2025
-                </h3>
-
-                <div className="min-h-[150px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed interactive sustainability dashboard for The Walt Disney Company to visualize Scope 1-3 carbon emissions and track progress toward 2030 net zero targets; integrated petition registration feature.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["JavaScript"].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Voice-Controlled Robot Assistant */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  Voice-Controlled Robot Assistant
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  April 2025 - May 2025
-                </h3>
-
-                <div className="min-h-[150px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Engineered voice-interactive robot using Python for speech recognition, Arduino for servo motor control, and Google's Gemini API for natural language processing, creating a responsive robot with physical interaction capabilities.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["Python", "Arduino"].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Thrill Seeker */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">Thrill Seeker</h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  April 2025 - May 2025
-                </h3>
-
-                <div className="min-h-[150px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Created GeoGuessr-inspired theme park location guessing game using JavaScript, featuring dynamic image maps, randomized clues, and adjustable difficulty to create engaging and replayable user experience across several locations.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <a
-                  href="https://mgcapiendo.github.io/thrillseeker/"
-                  target="_blank"
+              {projects.map((proj, idx) => (
+                <div
+                  key={idx}
+                  className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10"
                 >
-                  <img
-                    src="/images/thrillseekerlogo.jpg"
-                    alt="Thrill Seeker Logo"
-                    className="cursor-pointer hover:opacity-80 transition-opacity"
-                  />
-                </a>
+                  <h2 className="text-xl sm:text-2xl font-bold">{proj.title}</h2>
+                  <h3 className="text-base sm:text-lg mb-4 italic">{proj.date}</h3>
 
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["JavaScript"].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
+                  <div className="space-y-2 text-base sm:text-lg text-blue-900 font-semibold italic">
+                    {proj.description.slice(0, -1).map((line, i) => (
+                      <p key={i}>{line}</p>
                     ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Schedule Optimizer */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  Schedule Optimizer
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  March 2025 - April 2025
-                </h3>
-
-                <div className="mb-10 min-h-[192px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed a CRUD task management application using Next.js and MongoDB, customized interface, popup task details, and persistent storage, providing seamless task organization while enhancing user productivity.",
-                      ]}
-                      typeSpeed={7}
-                    />
+                    <p>
+                      <Typewriter
+                        words={[proj.description[proj.description.length - 1]]}
+                        typeSpeed={15}
+                      />
+                    </p>
                   </div>
-                </div>
 
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["JavaScript", "React", "Next.js", "MongoDB"].map(
-                      (skill, index) => (
+                  {proj.link && proj.img && (
+                    <a href={proj.link} target="_blank">
+                      <img
+                        src={proj.img}
+                        alt={`${proj.title} Logo`}
+                        className="cursor-pointer hover:opacity-80 transition-opacity mt-4"
+                      />
+                    </a>
+                  )}
+
+                  <div className="mt-auto pt-4">
+                    <ul className="flex flex-wrap gap-2">
+                      {proj.skills.map((skill, i) => (
                         <li
-                          key={index}
+                          key={i}
                           className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
                         >
                           {skill}
                         </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-
-              {/* LeetCode Habit Tracker */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  LeetCode Habit Tracker
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  February 2025 - March 2025
-                </h3>
-
-                <div className="mb-10 min-h-[192px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Client-side mobile app that allows users to input, track, and update leetcode habits and goals through a minimal UI with async.",
-                      ]}
-                      typeSpeed={7}
-                    />
+                      ))}
+                    </ul>
                   </div>
                 </div>
+              ))}
+            </div>
 
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["JavaScript", "React Native"].map(
-                      (skill, index) => (
-                        <li
-                          key={index}
-                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                        >
-                          {skill}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Mycobiome Simulator */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  Mycobiome Simulator Researcher Tool Set
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  January 2025 - January 2025
-                </h3>
-
-                <div className="mb-10 min-h-[192px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Led 4-person interdisciplinary team to develop proof-of-concept and prototype predictive tool for researchers to measure human mycobiomes with live data visualization across 10+ individual test cases.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["Python"].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Professional Website */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  Professional Portfolio Website
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  February 2025 - February 2025
-                </h3>
-
-                <div className="mb-10 min-h-[192px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Created a fully responsive and interactive portfolio website with Next.js to showcase projects, professional experience, and resume, featuring a modern design with smooth animations, mobile optimization, and seamless navigation.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {[
-                      "JavaScript",
-                      "React",
-                      "Next.js"
-                    ].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Swarm Intelligence */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  Swarm Intelligence For Waste Management
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  August 2024 - August 2024
-                </h3>
-
-                <div className="mb-10 min-h-[192px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals. Winning 2nd Place as a Solo Developer.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["Python"].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Piezoelectric Ceramic Analyzer */}
-              <div className="transition-transform duration-300 hover:scale-105 px-4 sm:px-6 py-6 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-xl sm:text-2xl font-bold">
-                  Piezoelectric Ceramic Analyzer
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  May 2024 - August 2024
-                </h3>
-
-                <div className="mb-10 min-h-[192px]">
-                  <div className="text-base sm:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed a flexible testing system for sonobuoy piezoelectric ceramics, reducing testing time by 75% (160 to 40 seconds). Integrated a database to automate data collection for thousands of tests, halving retrieval time while ensuring accuracy.",
-                      ]}
-                      typeSpeed={7}
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {[
-                      "C",
-                      "SQL",
-                      "Microsoft SQL Server",
-                      "HIOKI Impedance Analyzer"
-                    ].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+            {/* Call to Action */}
+            <div className="w-full mt-12 flex justify-center">
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link
+                  href="/about"
+                  className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
+                >
+                  View About
+                </Link>
+                <Link
+                  href="/experience"
+                  className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
+                >
+                  View Experiences
+                </Link>
+                <Link
+                  href="/contact"
+                  className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
+                >
+                  Let's Connect
+                </Link>
+                <Link
+                  href="/ManuelCapiendo_SWE_Resume.pdf"
+                  target="_blank"
+                  className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
+                >
+                  Download Resume
+                </Link>
               </div>
             </div>
+
           </section>
         </motion.div>
       </main>
@@ -392,4 +208,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

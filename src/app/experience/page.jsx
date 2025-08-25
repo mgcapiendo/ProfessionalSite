@@ -5,358 +5,171 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
-const experience = () => {
+const experiences = [
+  {
+    title: "Florida Power & Light: IT Nuclear Solutions Analyst Intern",
+    date: "May 2025 - Present",
+    description: [
+      "Gaining hands-on experience developing VR digital twin models in nuclear operations.",
+      "Developing expertise in robotic and other emerging technologies implementation for enterprise efficiency."
+    ],
+    skills: ["VR", "Unity", "Robotics", "Drones", "Agile", "Leadership"]
+  },
+  {
+    title: "Sparton Corporation: Acoustic Engineering Intern",
+    date: "May 2024 - August 2024",
+    description: [
+      "Developed a new testing system for sonobuoy piezoelectric ceramics reducing testing time by 75%.",
+      "Integrated a database to automate data collection for thousands of tests increasing retrieval time and accruacy by 50%."
+    ],
+    skills: ["C", "LabWindows/CVI", "SQL", "Software Development"]
+  },
+  {
+    title: "NextEra Energy: Data Science Side Project",
+    date: "June 2025 - July 2025",
+    description: [
+      "Improved an existing Python script to replace local file ingestion with AWS S3 data transfer.",
+      "Efficiently extracted, sanitized, and preprocessed 150K+ nuclear documents for BERTopic modeling."
+    ],
+    skills: ["Python","AWS", "Agile"]
+  },
+  {
+    title: "NEXT100 IT Hackathon 🏆",
+    date: "July 2025",
+    description: [
+      "Led team of 5 to develop internal AI career support tool leveraging organizational data to suggest role transitions based on employee skills and backgrounds based on successful career transitions, with similar solution later adopted by the company."
+    ],
+    skills: ["Python", "React", "Presentation", "Software Development", "Leadership",]
+  },
+  {
+    title: "Biotech Hackathon",
+    date: "January 2025",
+    description: [
+      "Led a team of 4 to develop a predictive tool for researchers to measure mycobiomes.",
+      "Live data visualization across 10+ test cases for accurate research insights."
+    ],
+    skills: ["Python", "Leadership", "Adaptability", "Public Speaking", "Research"]
+  },
+  {
+    title: "Cognitive Hackathon 🏆",
+    date: "August 2024",
+    description: [
+      "Developed a swarm intelligence solution using Ant Colony Optimization to reduce route inefficiencies and overhead by 10% for waste management trucks."
+    ],
+    skills: ["Python", "Time Management", "Presentation", "Public Speaking", "Research"]
+  },
+  {
+    title: "South Florida Tech Hub: Instructional Coder",
+    date: "February 2025 - Present",
+    description: [
+      "Assisting in monthly coding classes for K-12 students, fostering an engaging learning environment."
+    ],
+    skills: ["Programming", "Teaching", "Public Speaking"]
+  },
+  {
+    title: "Naval Reserve Officer Training Corps: Midshipman",
+    date: "August 2021 - May 2023",
+    description: [
+      "Cultivated advanced leadership skills through comprehensive military training."
+    ],
+    skills: ["Military", "Leadership", "Public Speaking", "Professionalism", "Priority Management"]
+  },
+  {
+    title: "Asian American Association: Ambassador",
+    date: "Spring 2022 - Spring 2023",
+    description: [
+      "Developed event coordination and cross-cultural communication skills by supporting 11 diverse cultural events."
+    ],
+    skills: ["Cultural Education", "Leadership", "Public Speaking", "Entertainment"]
+  }
+];
+
+const Experience = () => {
   return (
     <div className="min-h-screen font-sans">
       <main className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 800 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 50,
-            damping: 15,
-            delay: 0.5,
-          }}
+          transition={{ type: "spring", stiffness: 50, damping: 15, delay: 0.5 }}
         >
           <section className="py-6 sm:py-10 md:py-16 w-full max-w-[1700px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 space-y-4 sm:space-y-6">
-            {/* First Row - Internships */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 w-full">
-              {/* FPL Intern */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  Florida Power & Light: IT Nuclear Solutions Analyst Intern
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  May 2025 - Present
-                </h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Gaining hands-on experience developing AI-powered digital twin models in nuclear operations, developing expertise in both AI implementation and industrial system optimization.",
-                      ]}
-                      typeSpeed={8}
-                    />
+
+            {/* Page Title */}
+            <div className="text-center mb-8 sm:mb-12">
+              <h1 className="text-4xl sm:text-5xl font-bold text-black mb-6">
+                My Experiences
+              </h1>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full">
+              {experiences.map((exp, idx) => (
+                <div
+                  key={idx}
+                  className="transition-transform duration-300 hover:scale-105 px-6 sm:px-8 py-8 sm:py-10 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10"
+                >
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-bold">{exp.title}</h2>
+                  <h3 className="text-base sm:text-lg mb-4 italic">{exp.date}</h3>
+
+                  <div className="space-y-2 text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
+                    {exp.description.slice(0, -1).map((line, i) => (
+                      <p key={i}>{line}</p>
+                    ))}
+                    <p>
+                      <Typewriter
+                        words={[exp.description[exp.description.length - 1]]}
+                        typeSpeed={15}
+                      />
+                    </p>
                   </div>
-                </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["AI", "Drones", "Agile", "Leadership"].map(
-                      (skill, index) => (
+
+                  <div className="mt-auto pt-4">
+                    <ul className="flex flex-wrap gap-2">
+                      {exp.skills.map((skill, i) => (
                         <li
-                          key={index}
+                          key={i}
                           className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
                         >
                           {skill}
                         </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Sparton Intern */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  Sparton Corporation: Acoustic Engineering Intern
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  May 2024 - August 2024
-                </h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed a flexible testing system for sonobuoy piezoelectric ceramics, reducing testing time by 75%. Integrated a database to automate data collection for thousands of tests.",
-                      ]}
-                      typeSpeed={8}
-                    />
+                      ))}
+                    </ul>
                   </div>
                 </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["C", "LabWindows/CVI", "SQL", "Software Development"].map(
-                      (skill, index) => (
-                        <li
-                          key={index}
-                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                        >
-                          {skill}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
+              ))}
+            </div>
+
+            {/* Call to Action */}
+            <div className="w-full mt-12 flex justify-center">
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link
+                  href="/about"
+                  className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
+                >
+                  View About
+                </Link>
+                <Link
+                  href="/projects"
+                  className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
+                >
+                  View Projects
+                </Link>
+                <Link
+                  href="/contact"
+                  className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
+                >
+                  Let's Connect
+                </Link>
+                <Link
+                  href="/ManuelCapiendo_SWE_Resume.pdf"
+                  target="_blank"
+                  className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
+                >
+                  Download Resume
+                </Link>
               </div>
             </div>
 
-            {/* Third Row - Hackathons + Data Science Project */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6 w-full">
-              {/* NextEra Data Science Project */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  NextEra Energy: Data Science Side Project
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  June 2025 - July 2025
-                </h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Improved an existing Python script to replace local file ingestion with AWS S3 data transfer, efficiently extracting, sanitizing, and preprocessing 150K+ nuclear documents for topic modeling.",
-                      ]}
-                      typeSpeed={8}
-                    />
-                  </div>
-                </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["Python", "AWS", "Agile"].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* NEXT100 Hackathon 🏆 */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  NEXT100 IT Hackathon 🏆
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">July 2025</h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Led a team of interns to develop an internal AI career support tool leveraging organizational data.",
-                      ]}
-                      typeSpeed={8}
-                    />
-                  </div>
-                </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["C", "LabWindows/CVI", "SQL", "Software Development"].map(
-                      (skill, index) => (
-                        <li
-                          key={index}
-                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                        >
-                          {skill}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Biotech Hackathon */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  Biotech Hackathon
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  January 2025
-                </h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Led a team to develop a predictive tool for researchers to measure mycobiomes with live data visualization across 10+ test cases.",
-                      ]}
-                      typeSpeed={8}
-                    />
-                  </div>
-                </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {[
-                      "Python",
-                      "Leadership",
-                      "Adaptability",
-                      "Public Speaking",
-                      "Research",
-                    ].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Cognitive Hackathon 🏆 */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  Cognitive Hackathon 🏆
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  August 2024
-                </h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed an AI solution using Ant Colony Optimization to reduce route inefficiencies by 10% to advance waste-to-energy goals.",
-                      ]}
-                      typeSpeed={8}
-                    />
-                  </div>
-                </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {[
-                      "Python",
-                      "Time Management",
-                      "Presentation",
-                      "Public Speaking",
-                      "Research",
-                    ].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Fourth Row - Leadership & Volunteering */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 w-full">
-              {/* Naval ROTC */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  Naval Reserve Officer Training Corps: Midshipman
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  August 2021 - May 2023
-                </h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Cultivated advanced leadership skills through comprehensive military training.",
-                      ]}
-                      typeSpeed={8}
-                    />
-                  </div>
-                </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {[
-                      "Military",
-                      "Leadership",
-                      "Public Speaking",
-                      "Professionalism",
-                      "Priority Management",
-                    ].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Asian American Association */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  Asian American Association: Ambassador
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  Spring 2022 - Spring 2023
-                </h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Developed event coordination and cross-cultural communication skills by supporting 11 diverse cultural events.",
-                      ]}
-                      typeSpeed={8}
-                    />
-                  </div>
-                </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {[
-                      "Cultural Education",
-                      "Leadership",
-                      "Public Speaking",
-                      "Entertainment",
-                      "Operations",
-                    ].map((skill, index) => (
-                      <li
-                        key={index}
-                        className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                      >
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Flamingo Coder */}
-              <div className="transition-transform duration-300 hover:scale-105 px-14 sm:px-16 py-10 sm:py-12 rounded-2xl flex flex-col h-auto bg-gray-100 shadow-lg bg-black/20 border border-white/10">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  South Florida Tech Hub: Flamingo Coder
-                </h2>
-                <h3 className="text-base sm:text-lg mb-4 italic">
-                  February 2025 - Present
-                </h3>
-                <div className="mb-10 min-h-[100px]">
-                  <div className="text-sm sm:text-base md:text-lg text-blue-900 font-semibold italic">
-                    <Typewriter
-                      words={[
-                        "Assisting in monthly coding classes for K-12 students, fostering an engaging learning environment.",
-                      ]}
-                      typeSpeed={8}
-                    />
-                  </div>
-                </div>
-                <div className="mt-auto pt-4">
-                  <ul className="flex flex-wrap gap-2">
-                    {["Programming", "Teaching", "Public Speaking"].map(
-                      (skill, index) => (
-                        <li
-                          key={index}
-                          className="transition-transform duration-300 hover:scale-110 bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-                        >
-                          {skill}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Resume Link */}
-            <div className="w-full mt-8 flex justify-center">
-              <Link
-                href="/ManuelCapiendo_SWE_Resume.pdf"
-                target="_blank"
-                className="px-6 py-3 bg-blue-100 hover:bg-blue-200 text-blue-800 rounded-full transition-transform duration-300 hover:scale-105 shadow-md text-sm sm:text-base"
-              >
-                View Full Resume
-              </Link>
-            </div>
           </section>
         </motion.div>
       </main>
@@ -364,4 +177,4 @@ const experience = () => {
   );
 };
 
-export default experience;
+export default Experience;

@@ -47,6 +47,12 @@ export default function Navbar() {
             Home
           </Link>
           <Link
+            href="/about"
+            className="text-blue-900 hover:text-blue-500 transition-colors duration-300 mb-1 sm:mb-0"
+          >
+            About
+          </Link>
+          <Link
             href="/projects"
             className="text-blue-900 hover:text-blue-500 transition-colors duration-300 mb-1 sm:mb-0"
           >
